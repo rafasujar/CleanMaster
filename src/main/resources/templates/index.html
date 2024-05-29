@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="${title}">Title</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title th:text="${title}">Clean master </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <link rel="stylesheet" type="text/css" href="css/general.css" th:href="@{/css/general.css}" >
+    <link rel="stylesheet" type="text/css" href="css/index.css" th:href="@{/css/index.css}" >
 </head>
 <body>
-<h1 th:text="${header}">Header</h1>
-<p th:text="${message}">Message</p>
+<header>
+    <img src="assets/icons/logo.png" th:src="@{assets/icons/logo.png}" alt="logo" >
+    <img src="assets/icons/navbar.png" th:src="@{assets/icons/navbar.png}" alt="navbar" id="navbar" >
+    <nav> 
+        <img src="assets/icons/LeftArrow.png" th:src="@{assets/icons/LeftArrow.png}" alt="leftarrow" id="close">
+        <a href="/clienteauth" th:href= "@{/clienteauth}">Area Clientes</a>
+        <hr>
+        <a href="/empleadosauth" th:href= "@{/empleadosauth}">Area empleados</a>
+    </nav>
+</header>
+<main>
+    <img src="assets/images/image1.png" th:src="@{assets/images/image1.png}" alt="cleaning" >
+    <h1>Bienvenid@ a Clean Masters</h1>
+    <p> Es un placer tenerte con
+        nosotros. En Clean Master,
+        nos enorgullecemos de
+        ofrecer servicios de limpieza
+        de alta calidad, adaptados a
+        las necesidades específicas
+        de cada cliente. Nuestro
+        equipo de profesionales está
+        comprometido con la
+        excelencia, utilizando
+        productos y técnicas de
+        última generación para
+        garantizar espacios limpios y
+        saludables.
+    </p>
+    <br>
+    <p> Agradecemos tu confianza y
+        estamos aquí para hacer de
+        tu entorno un lugar
+        impecable y acogedor. Si
+        tienes alguna pregunta o
+        necesitas asistencia, no
+        dudes en contactarnos.
+        Estamos para servirte
+    </p>
+    <br>
+    <p>
+        ¡Bienvenido a una nueva era
+        de limpieza con Clean
+        Master!
+    </p>
+</main>
+<footer>
+    <p>&copy 2024 Clean Master. Todos los derechos reservados.</p>
+    <div>
+        <a href="#">Responsabilidad legal</a>
+        <a href="#">Trabaja con nosotros</a>
+    </div>
+</footer>
+<script src="js/header.js" th:src="@{/js/header.js}"></script>
 </body>
 </html>

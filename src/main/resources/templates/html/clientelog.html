@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Clean master </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+    <link rel="stylesheet" type="text/css" href="../css/general.css" th:href="@{/css/general.css}" >
+    <link rel="stylesheet" type="text/css" href="../css/clientelog.css" th:href="@{/css/index.css}" >
+</head>
+<body>
+<header>
+    <img src="../assets/icons/logo.png" th:src="@{assets/icons/logo.png}" alt="logo" >
+    <img src="../assets/icons/navbar.png" th:src="@{assets/icons/navbar.png}" alt="navbar" id="navbar" >
+    <nav> 
+        <img src="../assets/icons/LeftArrow.png" th:src="@{assets/icons/LeftArrow.png}" alt="leftarrow" id="close">
+        <a href="/cliente/login" th:href= "@{/cliente/login}">Area Clientes</a>
+        <hr>
+        <a href="/empleador/login" th:href= "@{/empleados/login}">Area empleados</a>
+    </nav>
+</header>
+<main>
+    <div>
+    <section>
+        <h2>
+            Iniciar sesion
+        </h2>
+        <div>
+            <hr>
+            <h1>O</h1>
+            <hr>
+        </div>
+        <h2><a>Registrarte</a></h2>
+    </section>
+    <div id="login">
+        <form >
+            <p> Correo electronico</p>
+            <div>
+                <input type="email" id="email" required>
+                <p>yourmail@example.com</p>
+            </div>
+            <p>Contraseña</p>
+            <div>
+                <input type="password" id="password" name="password" required>
+                <img src="../assets/icons/visible.png" th:src="@{assets/icons/visible.png}" alt="eye" id="eye">
+            </div>
+      
+
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <button>Iniciar sesion</button>
+        </form>
+
+    </div>
+</div>
+</main>
+<footer>
+    <p>&copy 2024 Clean Master. Todos los derechos reservados.</p>
+    <div>
+        <a href="#">Responsabilidad legal</a>
+        <a href="#">Trabaja con nosotros</a>
+    </div>
+</footer>
+<script src="../js/header.js" th:src="@{/js/header.js}"></script>
+</body>
+</html>
